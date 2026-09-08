@@ -1,0 +1,78 @@
+/* 1. GLOBALNI STILOVI (primjenjuju se na cijelu stranicu) */
+body {
+    /* BOJA POZADINE I TEKSTA */
+    background-color: #f4f7f6; /* Svijetlo siva/zelena pozadina */
+    color: #333333;           /* Tamno siva boja teksta */
+    
+    /* FONT FAMILY */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* MARGIN I PADDING (box model) */
+    margin: 0;                /* Uklanjamo zadani margin preglednika */
+    padding: 20px;            /* Dodajemo padding oko cijelog sadržaja */
+    
+    /* Dodatno za bolji izgled */
+    line-height: 1.6;         /* Razmak između redova teksta */
+}
+
+/* 2. STILIZIRANA NAVIGACIJA */
+nav {
+    background-color: #2c3e50; /* Tamno plava pozadina za navigaciju */
+    padding: 10px 20px;       /* Padding unutar navigacije */
+    border-radius: 8px;       /* Zaobljeni rubovi (opcionalno) */
+    margin-bottom: 20px;      /* Razmak ispod navigacije */
+}
+
+nav ul {
+    list-style: none;         /* Uklanjamo oznake (bullet points) s liste */
+    padding: 0;               /* Uklanjamo zadani padding liste */
+    margin: 0;                /* Uklanjamo zadani margin liste */
+    display: flex;            /* Postavljamo stavke u red (FLEXBOX) */
+    gap: 20px;                /* Razmak između poveznica */
+}
+
+nav ul li a {
+    color: white;             /* Boja teksta poveznica */
+    text-decoration: none;    /* UKLANJAMO PODCRTAVANJE */
+    font-weight: bold;        /* Podebljani tekst */
+    padding: 8px 12px;        /* Padding oko teksta unutar poveznice */
+    border-radius: 4px;       /* Zaobljeni rubovi za poveznice */
+    transition: background-color 0.3s ease; /* Glatka animacija pri prelasku mišem */
+}
+
+/* Efekt pri prelasku mišem preko poveznice (hover) */
+nav ul li a:hover {
+    background-color: #34495e; /* Malo svjetlija plava */
+    text-decoration: none;     /* Ponovno osiguravamo da nema podcrtavanja */
+}
+
+/* 3. STILOVI ZA GLAVNI SADRŽAJ (MAIN) */
+main {
+    background-color: white;   /* Bijela pozadina za glavni sadržaj */
+    padding: 30px;             /* Padding unutar glavnog sadržaja */
+    border-radius: 8px;        /* Zaobljeni rubovi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Blaga sjena */
+    max-width: 800px;          /* Maksimalna širina za bolju čitljivost */
+    margin: 0 auto 20px auto;  /* Centriranje i margin na dnu */
+}
+
+main h1 {
+    color: #2c3e50;           /* Boja za naslov */
+    margin-top: 0;            /* Uklanjamo gornji margin od naslova */
+}
+
+main img {
+    max-width: 100%;          /* Slika neće premašiti širinu svog spremnika */
+    height: auto;             /* Zadržava omjer stranica slike */
+    display: block;           /* Uklanja mali razmak ispod slike */
+    margin-top: 20px;         /* Razmak iznad slike */
+    border-radius: 4px;       /* Blago zaobljeni rubovi slike */
+}
+
+/* 4. STILOVI ZA FOOTER (podnožje) */
+footer {
+    text-align: center;       /* Centriranje teksta */
+    color: #777777;           /* Siva boja teksta */
+    font-size: 0.9em;         /* Malo manji font */
+    padding: 10px;
+}
